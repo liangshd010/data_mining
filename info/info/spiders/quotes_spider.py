@@ -4,7 +4,10 @@ import scrapy
 class QuotesSpider(scrapy.Spider):
     name = 'quotes'
     start_urls = [
-    'http://quotes.toscrape.com/tag/humor/',
+        'http://quotes.toscrape.com/tag/humor/',
+        'http://quotes.toscrape.com/tag/love/',
+        'http://quotes.toscrape.com/tag/life/',
+        'http://quotes.toscrape.com/tag/books/',
     ]
 
     def parse(self, response):
